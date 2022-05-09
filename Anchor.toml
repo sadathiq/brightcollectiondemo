@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.localnet]
+brightcollection = "6LK3PU91hdDRspgVmv6CxasLUz7eXv9KKzDGsQTWUcT1"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/validator-keypair.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
